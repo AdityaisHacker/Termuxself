@@ -12,6 +12,7 @@ scripts = {
     "ADITYA4-OWO": {"file": "CYBER4-OWO.py", "process": None, "status": "🔴 Stopped"},
     "ADITYA5-AVATAR": {"file": "CYBER5-AVATAR.py", "process": None, "status": "🔴 Stopped"},
     "ADITYA6-TOKEN": {"file": "dcid.py", "process": None, "status": "🔴 Stopped"},
+    "ADITYA7-VOICE": {"file": "voice7.py", "process": None, "status": "🔴 Stopped"},
 }
 
 # Status tracking variables
@@ -284,7 +285,7 @@ async def scriptstats_command(ctx):
     stats += "```diff\n"
     stats += "               📋  𝙰𝙳𝙸𝚃𝚈𝙰 ѕᴛᴀᴛѕ\n"
     for i, (name, data) in enumerate(scripts.items(), 1):
-        status_icon = "🟢" if "Running" in data['status'] else "🔴"
+        status_icon = "🟢" if "Running" in data['status'] else "��"
         stats += f"{i}. {name}: {data['status']}\n"
     stats += "\n"
     stats += f"Status: {current_status['status_type']}\n"
